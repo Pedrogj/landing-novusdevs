@@ -1,0 +1,27 @@
+<svg width="920" height="720" viewBox="0 0 920 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+	<title id="title">Panel de campana Novusdevs</title>
+	<desc id="desc">Visual de anuncios conectados a una landing page y consultas comerciales.</desc>
+	<rect width="920" height="720" rx="48" fill="#10201C"/>
+	<path d="M80 534C184 439 231 559 343 464C455 369 553 420 648 314C743 208 800 252 860 188" stroke="#99F6E4" stroke-width="14" stroke-linecap="round"/>
+	<circle cx="166" cy="188" r="82" fill="#F5C84B"/>
+	<circle cx="166" cy="188" r="42" fill="#10201C"/>
+	<rect x="296" y="86" width="438" height="166" rx="28" fill="#F7F5EF"/>
+	<rect x="328" y="122" width="148" height="20" rx="10" fill="#164E63"/>
+	<rect x="328" y="166" width="348" height="16" rx="8" fill="#94A3B8"/>
+	<rect x="328" y="198" width="264" height="16" rx="8" fill="#CBD5E1"/>
+	<rect x="656" y="116" width="42" height="42" rx="14" fill="#EF6F4E"/>
+	<rect x="102" y="316" width="236" height="254" rx="30" fill="#F7F5EF"/>
+	<rect x="132" y="350" width="176" height="92" rx="22" fill="#164E63"/>
+	<rect x="132" y="468" width="138" height="14" rx="7" fill="#64748B"/>
+	<rect x="132" y="498" width="108" height="14" rx="7" fill="#CBD5E1"/>
+	<rect x="378" y="306" width="214" height="296" rx="30" fill="#F7F5EF"/>
+	<rect x="414" y="348" width="142" height="18" rx="9" fill="#164E63"/>
+	<rect x="414" y="394" width="98" height="98" rx="26" fill="#99F6E4"/>
+	<path d="M439 445L461 468L514 412" stroke="#10201C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+	<rect x="414" y="526" width="106" height="16" rx="8" fill="#EF6F4E"/>
+	<rect x="632" y="386" width="208" height="146" rx="30" fill="#F7F5EF"/>
+	<circle cx="686" cy="438" r="24" fill="#F5C84B"/>
+	<rect x="728" y="416" width="72" height="14" rx="7" fill="#164E63"/>
+	<rect x="728" y="448" width="88" height="12" rx="6" fill="#94A3B8"/>
+	<rect x="664" y="486" width="92" height="16" rx="8" fill="#EF6F4E"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="880" height="620" viewBox="0 0 880 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+	<title id="title">Flujo de consulta Novusdevs</title>
+	<desc id="desc">Representacion del recorrido desde un anuncio hasta una consulta informada.</desc>
+	<rect width="880" height="620" rx="44" fill="#F7F5EF"/>
+	<rect x="70" y="86" width="204" height="328" rx="30" fill="#10201C"/>
+	<rect x="100" y="122" width="144" height="154" rx="24" fill="#F5C84B"/>
+	<rect x="100" y="306" width="112" height="18" rx="9" fill="#E2E8F0"/>
+	<rect x="100" y="344" width="136" height="14" rx="7" fill="#94A3B8"/>
+	<rect x="100" y="376" width="86" height="14" rx="7" fill="#99F6E4"/>
+	<path d="M300 250H410" stroke="#164E63" stroke-width="14" stroke-linecap="round"/>
+	<path d="M382 218L414 250L382 282" stroke="#164E63" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+	<rect x="432" y="76" width="248" height="462" rx="34" fill="#FFFFFF" stroke="#DFE6E3" stroke-width="4"/>
+	<rect x="468" y="120" width="134" height="18" rx="9" fill="#164E63"/>
+	<rect x="468" y="164" width="172" height="74" rx="20" fill="#99F6E4"/>
+	<rect x="468" y="270" width="166" height="16" rx="8" fill="#64748B"/>
+	<rect x="468" y="306" width="132" height="16" rx="8" fill="#CBD5E1"/>
+	<rect x="468" y="354" width="76" height="76" rx="22" fill="#EF6F4E"/>
+	<rect x="568" y="354" width="76" height="76" rx="22" fill="#F5C84B"/>
+	<rect x="468" y="462" width="122" height="28" rx="14" fill="#10201C"/>
+	<path d="M704 306H784" stroke="#164E63" stroke-width="14" stroke-linecap="round"/>
+	<path d="M756 274L788 306L756 338" stroke="#164E63" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+	<circle cx="790" cy="452" r="58" fill="#10201C"/>
+	<path d="M766 444C766 424 779 410 799 410C819 410 834 424 834 444C834 476 790 493 790 493C790 493 766 478 766 444Z" fill="#99F6E4"/>
+	<circle cx="802" cy="444" r="15" fill="#F7F5EF"/>
+</svg>
