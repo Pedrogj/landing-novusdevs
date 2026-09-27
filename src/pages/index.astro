@@ -9,6 +9,7 @@ const {
 	hero,
 	problems,
 	solution,
+	tailored,
 	features,
 	process,
 	faq,
@@ -65,7 +66,7 @@ const {
 			</div>
 		</section>
 
-		<section class="solution-section" id="oferta" aria-labelledby="solution-title">
+		<section class="solution-section" id="servicio" aria-labelledby="solution-title">
 			<div class="section-visual">
 				<img src={solution.image.src} alt={solution.image.alt} loading="lazy" />
 			</div>
@@ -76,6 +77,27 @@ const {
 				<ul class="check-list">
 					{solution.points.map((point) => <li>{point}</li>)}
 				</ul>
+			</div>
+		</section>
+
+		<section class="tailored-section" aria-labelledby="tailored-title">
+			<div class="section-heading">
+				<p class="eyebrow">{tailored.kicker}</p>
+				<h2 id="tailored-title">{tailored.title}</h2>
+				<p>{tailored.description}</p>
+			</div>
+			<div class="tailored-grid">
+				{tailored.items.map((item) => (
+					<article>
+						<h3>{item.title}</h3>
+						<p>{item.description}</p>
+					</article>
+				))}
+			</div>
+			<p class="tailored-note">{tailored.note}</p>
+			<div class="audience-callout">
+				<h3>{tailored.audienceTitle}</h3>
+				<p>{tailored.audienceDescription}</p>
 			</div>
 		</section>
 
@@ -130,7 +152,19 @@ const {
 				<p class="eyebrow">{contact.kicker}</p>
 				<h2 id="contact-title">{contact.title}</h2>
 				<p>{contact.description}</p>
-				<a class="button primary" href={contact.cta.href}>{contact.cta.label}</a>
+				<form class="contact-form" action={contact.cta.href} method="post" enctype="text/plain">
+					{contact.fields.map((field) => (
+						<label class:list={["form-field", field.type === "textarea" && "form-field-wide"]}>
+							<span>{field.label}</span>
+							{field.type === "textarea" ? (
+								<textarea name={field.name} rows="4" required={field.required}></textarea>
+							) : (
+								<input type={field.type} name={field.name} required={field.required} />
+							)}
+						</label>
+					))}
+					<button class="button primary form-submit" type="submit">{contact.cta.label}</button>
+				</form>
 			</section>
 		</div>
 	</main>
@@ -370,6 +404,7 @@ const {
 
 	.problem-section,
 	.solution-section,
+	.tailored-section,
 	.features-section,
 	.process-section,
 	.faq-section,
@@ -460,6 +495,61 @@ const {
 		text-align: center;
 	}
 
+	.section-heading > p:last-child {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 700px;
+	}
+
+	.tailored-grid {
+		display: grid;
+		gap: 18px;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.tailored-grid article {
+		background: #ffffff;
+		border: 1px solid rgba(16, 32, 28, 0.08);
+		border-radius: 8px;
+		padding: 24px;
+	}
+
+	.tailored-grid article:nth-child(2),
+	.tailored-grid article:nth-child(5) {
+		background: #fff4d3;
+	}
+
+	.tailored-grid article:nth-child(3) {
+		background: #dffcf6;
+	}
+
+	.tailored-grid h3,
+	.audience-callout h3 {
+		color: #10201c;
+	}
+
+	.tailored-note {
+		font-weight: 700;
+		margin: 26px auto 0;
+		max-width: 760px;
+		text-align: center;
+	}
+
+	.audience-callout {
+		border-bottom: 1px solid rgba(16, 32, 28, 0.16);
+		border-top: 1px solid rgba(16, 32, 28, 0.16);
+		display: grid;
+		gap: 28px;
+		grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+		margin-top: 54px;
+		padding: 32px 0;
+	}
+
+	.audience-callout h3,
+	.audience-callout p {
+		margin-bottom: 0;
+	}
+
 	.feature-grid {
 		display: grid;
 		gap: 18px;
@@ -507,7 +597,7 @@ const {
 	.timeline {
 		display: grid;
 		gap: 18px;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 
 	.timeline article {
@@ -590,7 +680,58 @@ const {
 
 	.contact-section .button.primary {
 		background: #99f6e4;
+		border: 0;
 		color: #10201c;
+		cursor: pointer;
+	}
+
+	.contact-form {
+		display: grid;
+		gap: 18px;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		margin: 48px auto 0;
+		max-width: 900px;
+		text-align: left;
+	}
+
+	.form-field {
+		display: grid;
+		gap: 8px;
+	}
+
+	.form-field-wide,
+	.form-submit {
+		grid-column: 1 / -1;
+	}
+
+	.form-field span {
+		color: #ffffff;
+		font-size: 0.9rem;
+		font-weight: 800;
+	}
+
+	.form-field input,
+	.form-field textarea {
+		background: rgba(255, 255, 255, 0.08);
+		border: 1px solid rgba(255, 255, 255, 0.24);
+		border-radius: 8px;
+		color: #ffffff;
+		font: inherit;
+		min-height: 52px;
+		padding: 12px 14px;
+		width: 100%;
+	}
+
+	.form-field textarea {
+		min-height: 116px;
+		resize: vertical;
+	}
+
+	.form-field input:focus,
+	.form-field textarea:focus {
+		border-color: #99f6e4;
+		outline: 3px solid rgba(153, 246, 228, 0.22);
+		outline-offset: 2px;
 	}
 
 	@media (max-width: 980px) {
@@ -605,6 +746,7 @@ const {
 		}
 
 		.feature-grid,
+		.tailored-grid,
 		.timeline {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
@@ -624,6 +766,7 @@ const {
 		.hero-section,
 		.problem-section,
 		.solution-section,
+		.tailored-section,
 		.features-section,
 		.process-section,
 		.faq-section,
@@ -650,18 +793,23 @@ const {
 
 		.stats-strip,
 		.feature-grid,
-		.timeline {
+		.tailored-grid,
+		.timeline,
+		.contact-form,
+		.audience-callout {
 			grid-template-columns: 1fr;
 		}
 
 		.stats-strip div,
 		.feature-grid article,
+		.tailored-grid article,
 		.timeline article {
 			min-height: auto;
 		}
 
 		.problem-section,
 		.solution-section,
+		.tailored-section,
 		.features-section,
 		.process-section,
 		.faq-section {

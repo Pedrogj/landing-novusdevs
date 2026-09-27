@@ -1,133 +1,188 @@
 export const landingContent = {
-	brand: {
-		name: 'Novusdevs',
-		tagline: 'Landing pages para campañas Meta',
-		logoMark: 'N',
-	},
-	meta: {
-		title: 'Novusdevs | Landing pages para convertir anuncios en consultas',
-		description:
-			'Desarrollo de landing pages conectadas a campañas en Meta para transformar clicks en consultas con mayor contexto comercial.',
-	},
-	nav: [
-		{ label: 'Oferta', href: '#oferta' },
-		{ label: 'Proceso', href: '#proceso' },
-		{ label: 'Preguntas', href: '#preguntas' },
-	],
-	hero: {
-		eyebrow: 'Para campañas en Meta Ads',
-		title: 'Convierte tus anuncios en consultas con mas informacion',
-		description:
-			'Desarrollamos landing pages conectadas a tus campañas para que tus potenciales clientes entiendan tu oferta, resuelvan sus dudas clave y contacten a tu empresa con mejor contexto.',
-		primaryCta: { label: 'Solicitar propuesta', href: '#contacto' },
-		secondaryCta: { label: 'Ver como funciona', href: '#proceso' },
-		image: {
-			src: '/images/novus-campaign-dashboard.svg',
-			alt: 'Panel visual de una campana con anuncios, landing page y consultas calificadas',
-		},
-		stats: [
-			{ value: '+ claridad', label: 'en la oferta antes del contacto' },
-			{ value: '- friccion', label: 'entre el anuncio y la consulta' },
-			{ value: 'base lista', label: 'para medir, aprender y mejorar' },
-		],
-	},
-	problems: {
-		kicker: 'El problema',
-		title: 'Un buen anuncio no alcanza si despues el usuario queda con dudas.',
-		items: [
-			'El click llega a una pagina generica que no responde lo prometido en el anuncio.',
-			'El cliente potencial escribe sin contexto o abandona antes de contactar.',
-			'La campana no deja una base clara para optimizar mensajes, secciones y conversiones.',
-		],
-	},
-	solution: {
-		kicker: 'La solucion',
-		title: 'Una landing pensada como puente entre el anuncio y la conversacion comercial.',
-		description:
-			'Construimos una experiencia directa, rapida y convincente: explica la oferta, ordena objeciones, muestra beneficios y empuja una accion clara hacia WhatsApp, formulario o agenda.',
-		image: {
-			src: '/images/novus-consultation-flow.svg',
-			alt: 'Flujo visual desde anuncio hasta consulta comercial con informacion previa',
-		},
-		points: [
-			'Mensaje alineado con la promesa de la campana.',
-			'Secciones editables para iterar textos, imagenes y llamados a la accion.',
-			'Estructura preparada para medicion, eventos y mejoras continuas.',
-		],
-	},
-	features: {
-		kicker: 'Que implementamos',
-		title: 'Una base atractiva y lista para evolucionar.',
-		items: [
-			{
-				title: 'Narrativa de oferta',
-				description:
-					'Organizamos el mensaje para que el visitante entienda que vendes, para quien es y por que deberia consultar.',
-			},
-			{
-				title: 'Preguntas clave',
-				description:
-					'Anticipamos dudas frecuentes sobre tiempos, proceso, alcance y contacto para reducir friccion.',
-			},
-			{
-				title: 'CTA conectado',
-				description:
-					'Preparamos una accion principal visible y coherente con la campana: WhatsApp, formulario o reunion.',
-			},
-			{
-				title: 'Contenido editable',
-				description:
-					'Textos, enlaces e imagenes quedan separados para actualizarlos sin rehacer la estructura de la pagina.',
-			},
-		],
-	},
-	process: {
-		kicker: 'Proceso',
-		title: 'De anuncio a consulta, con una pagina que aprende.',
-		steps: [
-			{
-				title: 'Alineamos la campana',
-				description: 'Revisamos promesa, audiencia, oferta y accion esperada para construir una pagina especifica.',
-			},
-			{
-				title: 'Diseñamos la landing',
-				description: 'Creamos una experiencia clara, visual y responsive que guia al usuario hacia el contacto.',
-			},
-			{
-				title: 'Medimos y mejoramos',
-				description: 'Dejamos una base preparada para ajustar titulares, secciones e imagenes segun el aprendizaje.',
-			},
-		],
-	},
-	faq: {
-		kicker: 'Preguntas que ayudan a convertir',
-		title: 'La landing responde antes de que el cliente tenga que escribir.',
-		items: [
-			{
-				question: 'Para quien es esta landing?',
-				answer:
-					'Para empresas que invierten en Meta Ads y quieren enviar el trafico a una pagina enfocada en convertir, no a una web generica.',
-			},
-			{
-				question: 'Que necesita entregar la empresa?',
-				answer:
-					'Una oferta base, datos de contacto, tono de marca, referencias visuales y cualquier informacion comercial que deba aparecer.',
-			},
-			{
-				question: 'Se puede actualizar despues?',
-				answer:
-					'Si. La estructura queda preparada para cambiar textos, imagenes, enlaces y secciones mientras se aprende de la campana.',
-			},
-		],
-	},
-	contact: {
-		kicker: 'Listo para empezar',
-		title: 'Hagamos que cada click llegue con mas intencion.',
-		description:
-			'Cuentanos que estas anunciando y armamos una landing enfocada en transformar interes en conversaciones comerciales mejor informadas.',
-		cta: {
-			label: 'Contactar a Novusdevs',
-			href: 'mailto:hola@novusdevs.com?subject=Quiero%20una%20landing%20para%20Meta%20Ads',
-		},
-	},
+  brand: {
+    name: "Novusdevs",
+    tagline: "Landing pages para negocios",
+    logoMark: "N",
+  },
+  meta: {
+    title: "Novusdevs | Landing pages para mejorar tus consultas",
+    description:
+      "Landing pages conectadas a campañas en Meta que informan, recogen datos útiles y ayudan a convertir consultas en solicitudes que puedes atender.",
+  },
+  nav: [
+    { label: "Servicio", href: "#servicio" },
+    { label: "Proceso", href: "#proceso" },
+    { label: "Preguntas", href: "#preguntas" },
+  ],
+  hero: {
+    eyebrow: "Landing pages conectadas a Meta Ads",
+    title: "¿Recibes muchas consultas, pero pocas avanzan?",
+    description:
+      "Desarrollo landing pages conectadas a campañas en Meta para que las personas conozcan tu oferta, respondan las preguntas clave y te contacten con información útil para atenderlas.",
+    primaryCta: { label: "Quiero mejorar mis consultas", href: "#contacto" },
+    secondaryCta: { label: "Ver cómo funciona", href: "#proceso" },
+    image: {
+      src: "/images/novus-campaign-dashboard.svg",
+      alt: "Panel visual de una campaña con anuncios, landing page y consultas calificadas",
+    },
+    stats: [
+      { value: "Más contexto", label: "antes de responder cada solicitud" },
+      { value: "Menos preguntas", label: "repetidas por WhatsApp" },
+      { value: "Mejor seguimiento", label: "de visitas y consultas recibidas" },
+    ],
+  },
+  problems: {
+    kicker: "El problema",
+    title: "El problema no termina cuando alguien hace clic en tu anuncio.",
+    items: [
+      "Recibes mensajes como «Hola, ¿precio?» y debes comenzar cada conversación desde cero.",
+      "Pides medidas o detalles, pero muchas conversaciones se detienen antes de tener lo necesario para cotizar.",
+      "Dedicas tiempo a consultas que todavía no cuentan con información suficiente para evaluar la solicitud.",
+    ],
+  },
+  solution: {
+    kicker: "Un mejor recorrido",
+    title: "De un mensaje sin contexto a una solicitud que puedes atender.",
+    description:
+      "Tu página puede explicar qué ofreces, mostrar las condiciones importantes y pedir los datos que necesitas antes del primer mensaje.",
+    image: {
+      src: "/images/novus-consultation-flow.svg",
+      alt: "Flujo desde un anuncio hasta una solicitud comercial con información útil",
+    },
+    points: [
+      "Sin un proceso: «Hola, ¿cuánto cuesta?»",
+      "Con una landing: «Necesito tres cortinas blackout, con estas medidas, para instalar en Chillán».",
+      "Las preguntas y el recorrido se definen según la forma de vender de cada negocio.",
+    ],
+  },
+  tailored: {
+    kicker: "Adaptada a tu negocio",
+    title: "Una solución diseñada alrededor de tu forma de vender.",
+    description:
+      "Cada empresa necesita información distinta para responder. Diseñamos el proceso según tus productos, condiciones de atención y las preguntas que hoy repites por WhatsApp.",
+    items: [
+      {
+        title: "Formulario guiado",
+        description: "Reúne los datos necesarios del proyecto sin convertir la consulta en un formulario interminable.",
+      },
+      {
+        title: "Precotización",
+        description: "Permite revisar cada caso y su información antes de preparar y entregar un precio.",
+      },
+      {
+        title: "Cotizador estimado",
+        description: "Muestra un valor de referencia cuando tu servicio puede calcularse con reglas claras.",
+      },
+      {
+        title: "Contacto por WhatsApp",
+        description: "Entrega el detalle de la solicitud para comenzar la conversación con más contexto.",
+      },
+      {
+        title: "Medición",
+        description: "Registra visitas y solicitudes para entender el recorrido e identificar mejoras.",
+      },
+    ],
+    note:
+      "No todas las páginas necesitan un cotizador. Elegimos el recorrido que tenga sentido para tu empresa y tus clientes.",
+    audienceTitle: "¿Para qué negocios puede servir?",
+    audienceDescription:
+      "Para empresas que reciben consultas frecuentes y necesitan ciertos datos antes de cotizar o agendar: productos a medida, instalaciones, remodelaciones y otros servicios cuyo precio o disponibilidad depende de cada solicitud.",
+  },
+  features: {
+    kicker: "Qué incluye el servicio",
+    title: "La página, el recorrido y la campaña trabajando juntos.",
+    items: [
+      {
+        title: "Landing page",
+        description:
+          "Una página enfocada en presentar tu oferta, responder dudas habituales y guiar al visitante hacia la solicitud.",
+      },
+      {
+        title: "Proceso de consulta",
+        description:
+          "Definimos las preguntas que permiten reunir información útil sin hacer el formulario innecesariamente largo.",
+      },
+      {
+        title: "Campañas en Meta",
+        description:
+          "Configuramos campañas para dirigir tráfico hacia la landing. La inversión publicitaria se paga por separado.",
+      },
+      {
+        title: "Medición y ajustes",
+        description:
+          "Revisamos las solicitudes y la interacción con la página para identificar posibles mejoras.",
+      },
+    ],
+  },
+  process: {
+    kicker: "Cómo trabajaremos",
+    title: "Construimos el recorrido desde tu proceso comercial real.",
+    steps: [
+      {
+        title: "Conocemos tu proceso",
+        description: "Revisamos qué vendes, qué consultas recibes y qué necesitas saber antes de responder.",
+      },
+      {
+        title: "Definimos oferta y preguntas",
+        description: "Elegimos qué información debe aparecer y qué datos vale la pena solicitar.",
+      },
+      {
+        title: "Desarrollamos la landing",
+        description: "Construimos el recorrido, el formulario o cotizador y los puntos de contacto.",
+      },
+      {
+        title: "Activamos y revisamos",
+        description: "Conectamos la página con las campañas y observamos las consultas para mejorar el proceso.",
+      },
+    ],
+  },
+  faq: {
+    kicker: "Preguntas frecuentes",
+    title: "Lo que conviene saber antes de comenzar.",
+    items: [
+      {
+        question: "¿La landing evitará todas las consultas de curiosos?",
+        answer: "No. Ninguna página puede asegurar que cada visitante comprará. Su función es informar antes del contacto y recoger datos que te ayuden a evaluar cada solicitud.",
+      },
+      {
+        question: "¿Es obligatorio mostrar precios?",
+        answer: "No. Podemos mostrar un valor estimado, un rango de referencia o reunir los datos para que entregues una cotización personalizada.",
+      },
+      {
+        question: "¿Necesito tener una página web actualmente?",
+        answer: "No. La landing puede funcionar como una página independiente para promocionar una oferta concreta.",
+      },
+      {
+        question: "¿La inversión en anuncios está incluida?",
+        answer: "La inversión publicitaria se paga por separado. Antes de comenzar acordamos el presupuesto para Meta y el alcance de la gestión.",
+      },
+      {
+        question: "¿Puedo usar la landing sin campañas?",
+        answer: "Sí. También puedes compartirla por redes sociales, WhatsApp u otros canales. Las campañas ayudan a llevar tráfico hacia ella.",
+      },
+    ],
+  },
+  contact: {
+    kicker: "Revisemos tu caso",
+    title: "Revisemos cómo llegan hoy tus consultas.",
+    description:
+      "Cuéntame qué vende tu empresa y qué información necesitas para cotizar. Revisaré si un formulario guiado, una precotización o un cotizador puede ayudarte a organizar mejor las solicitudes.",
+    cta: {
+      label: "Enviar información de mi negocio",
+      href: "mailto:hola@novusdevs.com?subject=Quiero%20mejorar%20las%20consultas%20de%20mi%20negocio",
+    },
+    fields: [
+      { name: "nombre", label: "Nombre", type: "text", required: true },
+      { name: "empresa", label: "Nombre de la empresa", type: "text", required: true },
+      { name: "oferta", label: "¿Qué producto o servicio quieres promocionar?", type: "textarea", required: true },
+      { name: "consultas", label: "¿Cómo llegan hoy tus consultas?", type: "textarea", required: true },
+      { name: "datos", label: "¿Qué datos necesitas pedir antes de cotizar?", type: "textarea", required: true },
+      { name: "meta", label: "¿Tienes campañas activas en Meta?", type: "text", required: true },
+      { name: "sitio", label: "Sitio web o red social de tu negocio", type: "url", required: false },
+      { name: "correo", label: "Correo electrónico", type: "email", required: true },
+      { name: "whatsapp", label: "WhatsApp", type: "tel", required: true },
+    ],
+    successMessage:
+      "Gracias por contarme sobre tu negocio. Revisaré la información y te contactaré para conversar sobre el recorrido más adecuado para tu oferta.",
+  },
 };
